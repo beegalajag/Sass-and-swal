@@ -1,0 +1,34 @@
+$font-stack: Georgia;
+$primaryColor: #ecf0f1;
+$border : 1px solid;
+$box: 5px 5px 5px #888888;
+body{
+	font-family: $font-stack;
+	font-color: $primaryColor;
+}
+.container{
+  background-image: url('log1.jpg');
+  border: $border;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 367px !important;
+  padding-top: 150px;
+  height: 650px;
+  box-shadow: $box; 
+ 
+  input#name.form-control{
+		width: 75%;
+	}
+	input#password.form-control{
+		@extend input#name.form-control;
+	}
+.main{
+		width: 350px;
+  border: $border;
+  padding-left: 32px;
+  padding-bottom: 25px;
+  box-shadow: $box; 
+  background-color: rgba(149, 165, 166,0.4)
+	}
+
+	}
