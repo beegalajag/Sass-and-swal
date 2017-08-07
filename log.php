@@ -37,12 +37,7 @@ if ($conn->connect_error) {
 
 		if ($conn->query($sql) === TRUE) {
 
-		    echo swal({
-  				title: "Enter valid password ",
-  				text: "Password must contain special chars and numbers",
-  				//timer: 3000,
-  				showConfirmButton: true
-				});
+		    echo " Row created successfully";
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
