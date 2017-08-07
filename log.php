@@ -37,7 +37,9 @@ if ($conn->connect_error) {
 
 		if ($conn->query($sql) === TRUE) {
 
-		    echo " Row created successfully";
+		    echo '<script type="text/javascript">',
+			     'swal("Information recorded successfully");',
+			     '</script>';
 		} else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
